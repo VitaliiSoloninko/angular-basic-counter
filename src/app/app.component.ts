@@ -5,8 +5,16 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'angular-basic-counter';
+  likes: number = 0;
+
+  addLike(): void {
+    this.likes += 1;
+  }
+
+  removeLike(): void {
+    this.likes -= 1;
+  }
 }
