@@ -8,4 +8,6 @@ import { CounterComponent } from './counter/counter.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {}
+export class AppComponent {
+  defaultLikes: number = 10;
+}
